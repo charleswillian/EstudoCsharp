@@ -1,0 +1,17 @@
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\bin\Debug\net5.0\aplicacao.deps.json
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\bin\Debug\net5.0\aplicacao.dll
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\bin\Debug\net5.0\aplicacao.pdb
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\aplicacao.csproj.AssemblyReference.cache
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\aplicacao.AssemblyInfoInputs.cache
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\aplicacao.AssemblyInfo.cs
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\aplicacao.csproj.CoreCompileInputs.cache
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\aplicacao.dll
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\refint\aplicacao.dll
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\aplicacao.pdb
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\ref\aplicacao.dll
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\bin\Debug\net5.0\dominio.dll
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\bin\Debug\net5.0\Entidades.dll
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\bin\Debug\net5.0\dominio.pdb
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\bin\Debug\net5.0\Entidades.pdb
+C:\Users\lendw\Desktop\Projetos\API_DDD\aplicacao\obj\Debug\net5.0\aplicacao.csproj.CopyComplete
