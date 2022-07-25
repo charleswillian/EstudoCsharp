@@ -10,9 +10,13 @@ namespace CadastroContatos_MVC.Repository
         private readonly BancoContext _bancoContext;
         public ContatoRepository(BancoContext bancoContext)
         {
-            _bancoContext = bancoContext;
+            this._bancoContext = bancoContext;
         }
 
+        public ContatoModel ListarPorId(int Id)
+        {
+            return  _bancoContext.Contatos.FirstOrDefault(x => x.id == Id);
+        }
         public List<ContatoModel> BuscarTodos()
         {
             return _bancoContext.Contatos.ToList();
@@ -25,6 +29,18 @@ namespace CadastroContatos_MVC.Repository
             //Gravar no banco
         }
 
-        
+        public ContatoModel Atualizar(ContatoModel contato)
+        {
+            ContatoModel contatoDB = ListarPorId(contato.id);
+            if (contatoDB == null) throw new System.Exception("Erro na atualização do contato");
+
+            contatoDB.name = contato.name;
+            contatoDB.email = contato.email;
+            contatoDB.celular = contato.celular;
+
+            _bancoContext.Contatos.Update(contatoDB);
+            _bancoContext.SaveChanges();
+            return contatoDB;
+        }
     }
 }

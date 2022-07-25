@@ -11,5 +11,7 @@ namespace dominio.Interfaces
         Task<bool> AdicionarUsuario(string email, string senha, int idade, int celular);
 
         Task<bool> ExisteUsuario(string email, string senha);
+
+        Task<string> RetornaIdUsuario(string email);
     }
 }

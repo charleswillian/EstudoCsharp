@@ -1,4 +1,5 @@
-﻿using aplicacao.Interfaces;
+﻿using aplicacao.Aplicacoes;
+using aplicacao.Interfaces;
 using Entidades.Entidades;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -86,16 +87,19 @@ namespace WebAPI.Controllers
         {
             if (string.IsNullOrWhiteSpace(login.email) || string.IsNullOrWhiteSpace(login.senha))
                 return Unauthorized();
+
             var resultado = await _singInManager.PasswordSignInAsync(login.email, login.senha, false, lockoutOnFailure:false);
 
             if (resultado.Succeeded)
-            {
+            { 
+                var idUsuario = await _AplicacaoUsuario.RetornaIdUsuario(login.email);
+
                 var token = new TokenJWTBuilder()
                     .AddSecurityKey(JwtSecurityKey.Create("Secret_Key-123456"))
                     .AddSubject("Estudando")
                     .AddIssuer("Teste.Security.Bearer")
                     .AddAudience("Teste.Security.Bearer")
-                    .AddClaim("UsuarioAPINumero", "1")
+                    .AddClaim("idUsuario", idUsuario)
                     .AddExpiry(5)
                     .Builder();
 

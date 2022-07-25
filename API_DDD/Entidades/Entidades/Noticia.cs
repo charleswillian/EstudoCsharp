@@ -15,11 +15,11 @@ namespace Entidades.Entidades
         [Column("NTC_ID")]
         public int Id { get; set; }
         [Column("NTC_TITULO")]
-        public int Titulo { get; set; }
+        public string Titulo { get; set; }
         [MaxLength(255)]
 
         [Column("NTC_INFORMACAO")]
-        public int Informacao { get; set; }
+        public string Informacao { get; set; }
         [MaxLength(255)]
 
         [Column("NTC_ATIVO")]
